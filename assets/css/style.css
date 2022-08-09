@@ -1,1 +1,367 @@
-/* Fonts */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* general for all */
+
+.disFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textCentre {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+p {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+/* general for all */
+
+
+.main-container {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    background: -webkit-linear-gradient(to right, #141e30, #243b55);
+}
+
+/* header container css */
+
+.header-container {
+    height: 90vh;
+    padding: 50px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    background: linear-gradient(90deg, hsla(252, 40%, 29%, 1) 0%, hsla(270, 77%, 71%, 1) 100%);
+    background: linear-gradient(to right, #141e30, #243b55);
+    background: -webkit-linear-gradient(to right, #141e30, #243b55);
+}
+
+.eventIntro {
+    width: 50%;
+    text-align: center;
+}
+
+.mainHeading {
+    font-weight: 100;
+    font-size: 4em;
+    text-align: left;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #D9F8C4 0%, #F37878 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.SupportLine {
+    width: 50%;
+    padding-top: 10%;
+    display: flex;
+    margin: auto;
+    font-size: 3em;
+    font-weight: 700;
+    align-self: center;
+    /* word-break: break-all; */
+    font-family: 'Fira Code', monospace;
+}
+
+.eventImage {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventImage img {
+    height: 80%;
+}
+
+.explore-more {
+    bottom: 10%;
+    position: absolute;
+    text-align: center;
+}
+
+.explore-more a {
+    color: white;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+}
+
+.explore-more a::after {
+    content: ">>";
+    padding-left: 5px;
+}
+
+.explore-more a:hover {
+    font-size: x-large;
+}
+
+/* header container css */
+
+
+#about,
+#services {
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+#benefits {
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    /* min-height: 100vh; */
+}
+
+#about {
+    color: white;
+    font-weight: 100;
+    background: linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+}
+
+#about h2 {
+    font-size: 2.5rem;
+}
+
+#about p {
+    font-size: 1.15em;
+    line-height: 35px;
+    margin: 30px auto;
+}
+
+#services {
+    color: white;
+    background: linear-gradient(90deg, hsla(350, 73%, 47%, 1) 0%, hsla(230, 33%, 47%, 1) 100%);
+}
+
+#services h2 {
+    font-weight: 100;
+    font-size: 2.5em;
+}
+
+.serviceAvaliable {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.serviceDesc {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.serviceDesc p {
+    font-size: 1.05em;
+    line-height: 30px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
+.serviceImage {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceImage img {
+    width: auto;
+    height: 175px;
+    overflow: hidden;
+}
+
+.serviceImage img::after {
+    content: "\a";
+    white-space: pre;
+}
+
+#benefits {
+    min-height: 80vh;
+    background: rgb(60, 9, 108);
+    background: linear-gradient(90deg, rgba(60, 9, 108, 0.4) 56%, rgba(123, 44, 191, 0.7) 97%);
+}
+
+#benefits h2 {
+    color: white;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+#benefits p {
+    font-size: 1.15em;
+    letter-spacing: 1.5px;
+    line-height: 35px;
+    margin: 30px auto;
+}
+
+
+.footer-container {
+    color: black;
+    background-color: #fff5da;
+}
+
+.footer-wrapper {
+    padding: 15px;
+    min-height: 29vh;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #141e30, #243b55);
+    background: -webkit-linear-gradient(to right, #141e30, #243b55);
+}
+
+
+.customer-supportLine {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5em;
+    font-family: 'Fira Code', monospace;
+}
+
+.option {
+    padding: 2%;
+    margin: auto;
+    text-align: right;
+    display: inline-block;
+    font-family: 'poppins', monospace;
+}
+
+/* .option ul li {
+    display: inline;
+} */
+
+.footer-wrapper .option a {
+    padding: 5px;
+    color: inherit;
+    display: inline;
+    text-decoration: none;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+}
+
+.option .list2 li {
+    display: block;
+}
+
+.footer-wrapper .option a:hover {
+    font-size: large;
+    text-decoration: underline 1px white;
+}
+
+
+.option a:hover a::after {
+    content: ">>";
+    padding-left: 5px;
+}
+
+
+.desName {
+    padding: 20px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'poppins', monospace;
+    background: linear-gradient(to right, #141e30, #243b55);
+    background: -webkit-linear-gradient(to right, #141e30, #243b55);
+}
+
+@media only screen and (max-width: 650px) {
+    .header-container {
+        display: initial;
+        padding: 15px;
+    }
+
+    .eventIntro {
+        width: 100%;
+        text-align: center;
+    }
+
+    .SupportLine {
+        width: 100%;
+        font-size: 2em;
+    }
+
+    .mainHeading {
+        background: linear-gradient(to right, #c9cb3d 0%, #cf2626 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-weight: 100;
+        font-size: 2em;
+    }
+
+    .eventImage {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .eventImage img {
+        width: 300px;
+        height: fit-content;
+    }
+
+    .explore-more {
+        bottom: 0;
+        left: 10px;
+        position: absolute;
+        text-align: center;
+    }
+
+    #services h2,
+    #about h2,
+    #benefits h2 {
+        color: white;
+        font-weight: 100;
+        font-size: 2rem;
+    }
+
+    #services p,
+    #about p,
+    #benefits p {
+        width: 100%;
+        font-size: 1em;
+        line-height: 25px;
+        margin: 30px auto;
+    }
+
+    .serviceImage {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .serviceImage img {
+        width: auto;
+        height: 125px;
+        overflow: hidden;
+    }
+
+    #benefits p {
+        color: white;
+    }
+}
